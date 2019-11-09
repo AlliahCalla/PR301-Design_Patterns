@@ -7,7 +7,7 @@ import math
 
 # Alliah & Chris
 
-class TkinterDrawer(AbstractDrawer):
+class TkinterDrawer:
 
     def select_pen(self, pen_num):
         self.line_width = self.choose_size_button.get()
@@ -81,7 +81,7 @@ class TkinterDrawer(AbstractDrawer):
         if self.pen_state:
             self.file.writeToFile("We are drawing a triangle")
             self.canvas[0].create_line(55, 85, 155, 85, 105,
-                                   180, 55, 85, width=self.line_width)
+                                       180, 55, 85, width=self.line_width)
 
     def reset(self):
         self.file.writeToFile("We are restting")

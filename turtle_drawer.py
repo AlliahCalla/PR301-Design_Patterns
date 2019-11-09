@@ -29,14 +29,14 @@ class TurtleDrawer(AbstractDrawer):
     def draw_line(self, direction, distance):
         print(f'drawing line of length {distance} at {direction} degrees')
         if direction == 0:
-            newDirection = 90
+            new_direction = 90
         if direction == 180:
-            newDirection = 270
+            new_direction = 270
         if direction == 90:
-            newDirection = 0
+            new_direction = 0
         if direction == 270:
-            newDirection = 180
-        turtle.seth(newDirection)
+            new_direction = 180
+        turtle.seth(new_direction)
         turtle.forward(distance)
 
     def draw_circle(self, radius):

@@ -1,7 +1,7 @@
 from tkinter_builder import TkinterBuilder
 from tk_user_interface import TkUserInterface
-from tkinter_drawer import TkinterDrawer
 from tkinter import *
+from tkinter_drawer import TkinterDrawer
 
 
 class TkinterGraphicalBuilder(TkinterBuilder, TkinterDrawer):
@@ -20,7 +20,8 @@ class TkinterGraphicalBuilder(TkinterBuilder, TkinterDrawer):
         self.y = 250
         self.file = self.tkinter_user_interface.get_file()
         self.color = self.tkinter_user_interface.get_color()
-        self.choose_size_button = self.tkinter_user_interface.get_choose_size_button()
+        self.choose_size_button = \
+            self.tkinter_user_interface.get_choose_size_button()
         self.direction = self.tkinter_user_interface.get_direction()
         self.distance = self.tkinter_user_interface.get_distance()
 

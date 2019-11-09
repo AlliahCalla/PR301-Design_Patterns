@@ -30,7 +30,8 @@ class TkUserInterface(TkinterInterfacePlan):
     def set_label(self, root, t: str) -> None:
         self.label.append(Label(root, text=t))
 
-    def set_canvas(self, root, background: object, w: object, h: object) -> None:
+    def set_canvas(self, root, background: object, w: object,
+                   h: object) -> None:
         self.canvas.append(Canvas(root, bg=background, width=w, height=h))
 
     def set_scales(self, root, fr: object, t: object, ort: object) -> None:

@@ -15,4 +15,3 @@ class TkinterDirector(object):
         self.tkinter_builder.build_scales()
         self.tkinter_builder.build_separator()
         self.tkinter_builder.build_binder()
-

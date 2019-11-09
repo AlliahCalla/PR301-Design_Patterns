@@ -59,4 +59,3 @@ class AbstractSourceReader(ABC):
     @abstractmethod
     def go(self):
         pass
-
